@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dictionary Final Lab</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Dictionary Final Lab</h1>
+  </header>
+
+  <main>
+    <form id="search-form" aria-label="Search for a word">
+      <input type="text" id="search-input" placeholder="Enter a word" aria-label="Word input" required>
+      <button type="submit">Search</button>
+    </form>
+
+    <section id="results">
+      <h2 id="word"></h2>
+      <p id="pronunciation"></p>
+      <button id="play-audio" hidden>Play Pronunciation</button>
+      <div id="definitions"></div>
+      <div id="synonyms"></div>
+      <p id="error-message" class="hidden"></p>
+    </section>
+  </main>
+
+  <script src="index.js" defer></script>
+</body>
+</html>
